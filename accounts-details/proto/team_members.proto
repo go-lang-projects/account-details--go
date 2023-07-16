@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "ea.com/proto";
+
+message Details {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Team {
+  Details single_member = 2;
+  repeated Details members = 3;
+}

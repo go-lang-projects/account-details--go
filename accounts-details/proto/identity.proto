@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package example.oneof;
+
+option go_package = "ea.com/proto";
+
+// This is example of an onOf
+
+message Identity {
+  oneof identity {
+    string name = 1;
+    uint32 id = 2;
+  }
+}

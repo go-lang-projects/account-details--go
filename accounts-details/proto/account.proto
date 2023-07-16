@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "ea.com/proto";
+
+message Account {
+  uint32 id = 1;
+  bool is_active = 2;
+  repeated int32 phones = 4;
+  string name = 3;
+}
